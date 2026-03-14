@@ -25,10 +25,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: checkstyle-result
-          path: Assignment5_Code\target\checkstyle-result.xml
+          path: target/checkstyle-result.xml
 
       - name: Jacoco Report
         uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
-          path: Assignment5_Code\target\site\jacoco\jacoco.xml
+          path: /target/site/jacoco/jacoco.xml
