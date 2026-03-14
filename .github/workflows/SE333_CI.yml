@@ -14,7 +14,7 @@ jobs:
       - name: setupJava
         uses: actions/setup-java@v4
         with:
-          java-version: "21"
+          java-version: "23"
           distribution: "temurin"
           architecture: x64
 
@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: checkstyle-result
-          path: checkstyle-result.xml
+          path: target\checkstyle-result.xml
 
       - name: Jacoco Report
         uses: actions/upload-artifact@v4
